@@ -5,7 +5,7 @@ class Application
 
     current_time = Time.now
 
-
+    time.hour > 12 ? resp.write "Good Morning!" : resp.write "Good Afternoon!"
 
     resp.finish
   end
